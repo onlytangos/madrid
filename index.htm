@@ -7,222 +7,15 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Workbench&display=swap" rel="stylesheet">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-<style>
-/*
-EFECTOS CSS ==
-https://codepen.io/alvarotrigo/pen/xxLvyOG
-https://codepen.io/alvarotrigo/pen/PoKMyzO
-https://codepen.io/alvarotrigo/pen/bGrXmwM
-https://codepen.io/alvarotrigo/pen/PoKMybE
-https://codepen.io/derossi_s/pen/vpWMzb
-*/
+<link rel="stylesheet" type="text/css" href="estilos2.css" />
 
-
-/*
-FUENTES ===
-https://fonts.google.com/specimen/Pacifico
-https://fonts.google.com/specimen/PT+Sans+Narrow
-https://fonts.google.com/specimen/Exo+2
-https://fonts.google.com/specimen/Caveat
-https://fonts.google.com/specimen/Shadows+Into+Light
-https://fonts.google.com/specimen/Saira+Condensed
-https://fonts.google.com/specimen/Satisfy
-https://fonts.google.com/specimen/Indie+Flower
-*/
-
-
-
-/*
-
-font-family: "Workbench", sans-serif;
-font-optical-sizing: auto;
-font-weight: 400;
-font-style: normal;
-font-variation-settings:
-  "BLED" 0,
-  "SCAN" 0;
-
-  font-family: "Saira", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-	font-size: 16px;
-
-*/
-
-
-/*.pt-sans narrow-regular */
-#contenido{
-	margin: 0 auto;
-	width: 900px;
-}
-.titulo1{
-	font-family: "PT Sans Narrow", sans-serif;
-	font-weight: 400;
-	font-style: normal;
-}
-.titulo2 {}
-#ws{
-	width: 18px;
-}
-.tabla{
-  width: 100%;
-  border-collapse: collapse;
-	}
-.tabla tr {
-	}
-.tabla tr td{
-		padding: 0px 6px 0px 6px;
-	}
-.et0,.et1,.et2,.et3,.et4{
-	font-size: 1rem;
-  font-weight: bold; 
-  text-align: center;
-}
-.et1{
-  color: red; 
-}
-.et0{
-  color: blue;
-}
-.et2{
-	font-size: 1rem;
-  color: #ffe;
-  color: darkblue;
-  background-color: yellow;
-}
-.et3{
-  color: green;
-}
-.et4{
-  color: darkblue;
-  background-color: pink;
-}
-</style>
 <link rel="stylesheet" type="text/css" href="estilos.css" />
 
 <script>
-
-/*
-
-ToDo list
-- publicar github
-- pagina españa
-- pagina europa
-
-- redenar estilos y apiicacion 
-- no va en brave ??
-- revision de codigo
-- organizar funciones
-- lio de los campos numeros
-- hiperenlace website icono
-- mapa 
-- chinquetas
-- personalizar chinquetas organizar con el mapa
-
-- crear pagina de prueba en github
-- puedo tener subdominios ?
-- debe ser publica ! 
-- solo usarla para para publicar
-- como anunciar la pagina en fbPage ?
-
-- consulta envia tu enlace para publicar
-
-DATOS
-- datos en filas de texto, el primer campo indica la tabla
-- cada tabla tiene una estructura 
-- trabajan con array de cadenas
-
-comandos (retornan array de cadenas):
-- get (tabla) ; retorna una tabla (primer campo)
-- join (tabla1,n.campo,tabla2,n.campo) ; une dos tablas por un campo comun
-- sort (array,nc) ; ordenan por uno de los campos(nc)
-- subEqual (tabla,nc,valor) ; cumplen la condicion nc=valor
-- subFromTo (tabla,nc,valor1,valor2) ; cumplen valor1 < nc < valor2
-- find (tabla,campo,texto) ; busca en una tabla algun campo con ese texto
-- contains (tabla,texto) ; busca algun campo contenga el texto
-- expand (tabla,ini,fin) ; entre las fechas dadas expande actividades repetidas
-- extract(table,campos) ; extrae una serie de campos
-- printAct(table) ; da formato e imprime una actividad
-- now(tabla,ini,fin) ; expande lineas entre las fechas ini fin , actividades con repeticion
-
-consultas:
-* hay campos que tienen actividades que se repiten eso genera nuevas lineas pero solo si visualizo ese periodo
-*. MADRID milongas ciudad ordenadas por fecha : dia;horario;nombre;organizador
-*. SPAIN actividades en mi pais ordenadas por fecha : actividad;nombre;inicio;fin
- 
-filtro:
-*. donde: continente, pais, ciudad, cerca de mi (ubicación ? a X km)
-*. fecha: hoy, esta semana, en un mes, en un año, en adelante
-*. tipo: todos,milonga,clases,festival,camp,maraton,concierto,otros
-*. checkbox: mi ciudad, mi pais, todas ordenadas por fecha
-*. checkbox: actividades ordenados por fecha
-
-presentacion:
-- segun consulta
-- No esta tu actividad ? escribenos a : onlytangos@gmail.com
-
-tablas:
-* delimitadores ; #
-* all todas las tablas
-* local (loc)
-* milonga|maraton|camp|festival|concierto|clases (act)
-* dj|bailarin (rol)
-* cantante|violin|piano|otros (mus)
-
-axiomas:
-1. los organizadores tienen algun evento en la lista, no necesitan linea propia
-2. los bailarines no tienen porque tener clases y viceversa
-3. las actividades tienen una localizacion
-4. tablas terminales localizacion,rol,musicos
-
-actividad:
-- nombre
-- organizador 
-- pais
-- población o mas cercana
-- repeticion no|cada X dias (anuales no poner repeticion)
-- programacion
--- localizacion (gps)
--- fecha hora inicio general
--- fecha hora de fin general
-nota: (lista 0 solo hay una)
-- personajes nombre y alias
-- contacto
-- owner
-
-grupos musicales
-- nombre
-- componentes (lista): nombres
-
-personajes:
-- nombre
-- rol: (puede tener varios) bailarin, dj, organizador 
-- alias
-- contacto
-- musico: (puede tener varios)no|violin|canta|bandoneon
-
-arañas para capturar información
-https://www.danceus.org/events/argentine-tango/tango-festivals-marathons-worldwide/
-https://tangocat.net/
-https://www.tangomarathons.com/djs/
-
-presentacion
-filtro donde marcar que buscas
-por todos los campos de la bbdd
-
-*/
-var tipos=['milonga','class','show','practice','musicLive'];
+var tipos=['milonga','class','show','practice','musicLive','outdoors'];
 var diaSem=['sunday','monday','tuesday','wednesday','thursday','friday','saturday'];
 var meses=['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC'];
 
@@ -230,8 +23,13 @@ function app(){
 	printNext7d('MILONGAS MADRID');
 }
 function pie(){
-	let txt='@ website under construction';
-	return '<div>'+txt+'</div>';
+	let txt='';
+	txt+='<div class="tabpie">';
+	txt+='<div><a target="_blank" href="https://www.facebook.com/profile.php?id=61557910653670"><img class="iconoPie" src="img/fb.png"></a></div>';
+	txt+='<div><a target="_blank" href="https://www.youtube.com/@onlytangos/featured"><img class="iconoPie" src="img/yt.png"></a></div>';
+	txt+='<div>onlytangos@proton.me</div>';	
+	txt+='</div>';
+	return txt;
 }
 function now(data,dias){
 // recorrer el eventos ver si estan en rango incluidos periodicos
@@ -460,25 +258,12 @@ https://www.facebook.com/p/MadridTango-100064691886648/'
 		document.getElementById('contenido').appendChild(ele);}
 
 window.onload=app;
-/*
-<div class=wrap>
-  <h1>Dymo-tape embossed heading h1</h1>
-  <h2>heading h2</h2>
-  <h3>heading h3</h3>
-  <h4>heading h4</h4>
-  <h5>heading h5</h5>
-  <h6>heading h6</h6>
-</div>
-*/
 </script>
 <script src='datos.js'></script>
-
 </head>
-
 <body>
 <div id='contenido'></div>
 </body>
-
 </html> 
 
 

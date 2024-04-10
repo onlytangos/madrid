@@ -83,3 +83,37 @@ h6 {
   box-shadow: 0 0.5em 0.5em rgba(0, 0, 0, .5);
   transform: rotate(3deg) skew(10deg);
 }
+
+/*
+EFECTOS CSS ==
+https://codepen.io/alvarotrigo/pen/xxLvyOG
+https://codepen.io/alvarotrigo/pen/PoKMyzO
+https://codepen.io/alvarotrigo/pen/bGrXmwM
+https://codepen.io/alvarotrigo/pen/PoKMybE
+https://codepen.io/derossi_s/pen/vpWMzb
+
+FUENTES ===
+https://fonts.google.com/specimen/Pacifico
+https://fonts.google.com/specimen/PT+Sans+Narrow
+https://fonts.google.com/specimen/Exo+2
+https://fonts.google.com/specimen/Caveat
+https://fonts.google.com/specimen/Shadows+Into+Light
+https://fonts.google.com/specimen/Saira+Condensed
+https://fonts.google.com/specimen/Satisfy
+https://fonts.google.com/specimen/Indie+Flower
+
+font-family: "Workbench", sans-serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+font-variation-settings:
+  "BLED" 0,
+  "SCAN" 0;
+
+  font-family: "Saira", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 16px;
+
+*/
