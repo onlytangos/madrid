@@ -33,7 +33,6 @@ var data=[
 'act;show;Alejandra Martiñan & Rafael Luna;#LC14;2024-04-20;23:15;2024-04-20;23:30;0;Andea Venturini;#HAMR',
 'act;show;Alex Moncada & Martina Waldman;#LC14;2024-04-06;23:10;2024-04-06;23:30;0;Andea Victoria;#HAMR',
 'act;show;Bárbara Carpino & Claudio Forte;#LC14;2024-04-05;23:10;2024-04-05;23:30;0;Loic Vix;',
-'act;show;Christian Cerezo & Valentin Arias Delgado;#LC14;2024-04-26;23:15;2024-04-26;23:30;0;Loic;#HCCC',
 'act;show;Cristian Cerezo & Valentín Arias;#LC14;2024-04-26;21:00;2024-04-26;00:30;0;Loic Vix;#HCCV',
 'act;show;Luces de Tango;#LTEF;2024-04-21;12:30;2024-04-21;14:00;0;Claudia;#HLDT;https://arteyfantasia.eu/espectaculo-luces-de-tango/',
 //'act;milonga;Che Bandoneón - DJ Maurice;#LJ08;2024-04-06;20:30;2024-04-06;23:30;7;Maurice Gambra;#HECA',
